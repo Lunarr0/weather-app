@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.weather-app {
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"] {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    margin-right: 1rem;
+    width: 250px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    background: #2ecc71;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: #27ae60;
+}
+
+#warning {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+#weather {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background: rgba(44, 62, 80, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    margin: 2rem auto;
+    max-width: 400px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#weather p {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+#hourly-forecast {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.forecast-item {
+    background: rgba(44, 62, 80, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    border-radius: 15px;
+    min-width: 200px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.forecast-item:hover {
+    transform: translateY(-5px);
+    background: rgba(44, 62, 80, 0.9);
+    /* animation: pulse 2s infinite; */
+}
+
+.forecast-item p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.forecast-time {
+    color: #3498db;
+    font-weight: bold;
+}
+
+.forecast-temperature {
+    font-size: 1.2rem !important;
+    color: #ffffff;
+}
+
+.forecast-description {
+    color: #bdc3c7;
+}
+
+/* Add a subtle pulsing animation to the search button */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+button:hover {
+    animation: pulse 2s infinite;
+}
