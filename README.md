@@ -59,29 +59,10 @@ This application uses the OpenWeatherMap API:
 ```
 weather-app/
 │
-├── index.html          # Main HTML file with the application structure
-│   ├── container      # Main container div
-│   ├── weather-app    # App wrapper
-│   ├── search section # Input and button for city search
-│   ├── weather        # Current weather display section
-│   └── hourly-forecast # Container for forecast cards
-│
-├── style.css          # Styles and layout
-│   ├── Global styles  # Body and container styles
-│   ├── Input styles   # Search box and button styling
-│   ├── Weather card   # Current weather display styling
-│   └── Forecast cards # Hourly forecast card styling
-│
-├── main.js            # JavaScript functionality
-│   ├── DOM elements   # Element selections
-│   ├── getWeather()   # Main weather fetching function
-│   ├── API handling   # Weather API integration
-│   └── Error handling # Input validation and API errors
-│
-├── .vscode/          # VS Code configuration
-│   └── settings.json  # Live Server settings
-│
-└── README.md         # Project documentation
+├── index.html # Main HTML file
+├── style.css # Styles and layout
+├── main.js # JavaScript functionality
+└── README.md # Project documentation
 ```
 
 ## License
